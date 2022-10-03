@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>App for registration</title>
+</head>
+<body>
+    <header class="header">
+        <h1>App for registration</h1>
+    </header>
+    <main>
+        <div  class="wrapper-form">
+            <noscript>
+                <p>To send data to the server, enable JS in the browser settings!</p>
+            </noscript>
+            <a href="authorization.html">Authorization</a>
+            <p>Registration</p>
+            <form class="form">
+                <label class="form-label">Login</label>
+                <input id="login" class="form-input" name="login" placeholder="Login">
+                <span class="login error"></span>
+
+                <label class="form-label" >Password</label>
+                <input id="password" type="password" class="form-input" name="password" placeholder="Password">
+                <span class="password error"></span>
+
+                <label class="form-label" >Confirm password</label>
+                <input id="confirm_password" type="password" class="form-input" name="confirm_password" placeholder="Confirm password">
+                <span class="confirm_password error"></span>
+
+                <label class="form-label" >Email</label>
+                <input id="email" class="form-input" name="email" placeholder="Email">
+                <span class="email error"></span>
+
+                <label class="form-label" >Name</label>
+                <input id="name" class="form-input" name="name" placeholder="Name">
+                <span class="name error"></span>
+
+                <button id="submit-reg" class="form-submit-btn" type="submit">Sign up</button>
+                <span id="message"></span>
+            </form>
+        </div>
+    </main>
+    <script src="js/helper.js"></script>
+    <script src="js/registration.js"></script>
+</body>
+</html>
